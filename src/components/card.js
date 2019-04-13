@@ -29,10 +29,10 @@ class Card extends React.Component {
   render(){
     const {title} = this.props
   return (
-    <div style={{ minWidth: `15rem`, marginBottom: `1.5rem`, backgroundColor: `white`, borderRadius: `5px`, boxShadow: `0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)` }}>
+    <div style={{ width: `6rem`, marginBottom: `1.5rem`, backgroundColor: `white`, borderRadius: `5px`, boxShadow: `0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)` }}>
       <h2>{title}</h2>
       {defaultImage}
-      <div style={{width: '200px'}}>
+      <div style={{width: '10px'}}>
 
           <ProgressBars data={this.state.data} cardTile={title}/>
 

@@ -2,14 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 import Card from "../components/card"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+
+
 
 const ReplacePage = () => (
-    <Layout>
-      <SEO title="Replace" keywords={[`gatsby`, `application`, `react`]} />
+    <div>
+        <h2> REPLACE</h2>
         <Card />
-    </Layout>
+    </div>
   )
 
 export default ReplacePage

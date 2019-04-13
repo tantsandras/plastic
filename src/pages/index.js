@@ -1,18 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import HaveSolutionButton from "../components/HaveSolution"
-import NeedSolutionButton from "../components/NeedSolution"
+
+
+import "./index.css"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <HaveSolutionButton />
-    <NeedSolutionButton />
-    {/* <Link to="/solution/">Go to page 2</Link> */}
-  </Layout>
+  <div>
+        <h2> HOME</h2>
+
+    <button>
+        <Link to="/register/">I have a Solution</Link>
+    </button>
+		<button>
+			<Link to="/solution/">I need a Solution</Link>
+		</button>
+  </div>
 )
 
 export default IndexPage

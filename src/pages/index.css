@@ -1,0 +1,21 @@
+
+body {
+  background: rgb(255, 247, 242);
+  font-family: sans-serif;
+  color: rgb(77, 87, 127);
+  margin: 4rem;
+}
+
+h1{
+
+  padding-top:3rem;
+  margin-bottom: 3rem;
+  position: sticky;
+  top: 100px;
+  z-index: 10;
+  }
+
+a{
+text-decoration: none;
+color: rgb(77, 87, 127);
+}
