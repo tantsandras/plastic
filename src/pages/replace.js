@@ -8,7 +8,13 @@ import Card from "../components/card"
 const ReplacePage = () => (
     <div>
         <h2> REPLACE</h2>
-        <Card />
+        <div className="card-container">
+        <Card title="one" />
+        <Card title="two" />
+        <Card title="three" />
+        <Card title="four" />
+        <Card title="five" />
+        </div>
     </div>
   )
 

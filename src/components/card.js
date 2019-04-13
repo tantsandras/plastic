@@ -15,7 +15,7 @@ const defaultImage = (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img className="tile-img" fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 
@@ -29,10 +29,9 @@ class Card extends React.Component {
   render(){
     const {title} = this.props
   return (
-    <div style={{ width: `6rem`, marginBottom: `1.5rem`, backgroundColor: `white`, borderRadius: `5px`, boxShadow: `0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)` }}>
-      <h2>{title}</h2>
+    <div className="card">
       {defaultImage}
-      <div style={{width: '10px'}}>
+      <div >
 
           <ProgressBars data={this.state.data} cardTile={title}/>
 

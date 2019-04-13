@@ -3,19 +3,98 @@ body {
   background: rgb(255, 247, 242);
   font-family: sans-serif;
   color: rgb(77, 87, 127);
-  margin: 4rem;
+
 }
 
-h1{
+h2{
 
-  padding-top:3rem;
+  padding:3rem;
   margin-bottom: 3rem;
-  position: sticky;
-  top: 100px;
-  z-index: 10;
+
+  border-bottom: 5px solid rgb(77, 87, 127);
+  margin-left: 0;
   }
 
 a{
 text-decoration: none;
 color: rgb(77, 87, 127);
+}
+
+.form{
+  width: 30rem;
+  margin:auto;
+
+
+}
+
+input,textarea{
+  margin: 0.5rem;
+  width: 20rem;
+  position: relative
+
+}
+
+input[text]::placeholder{
+  text-align: left;
+  margin-top: 0;
+  position: absolute;
+  top:0
+}
+
+#image-url{
+  text-align: center;
+}
+
+
+.homeButtons{
+  width: 30rem;
+  margin:auto;
+  height: 100vh;
+
+
+}
+
+.homeButtons button{
+  width: 50%;
+  margin: 10rem auto;
+  font-size: 0.5rem;
+}
+
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  padding: 4rem 9rem;
+  height: 40rem;
+}
+
+.card{
+width: 220px;
+height: 25rem;
+margin-right: 0.2rem;
+margin-left: 0.2rem;
+margin-bottom: 1.5rem;
+
+ border-radius: 5px;
+
+
+}
+
+.tile-img{
+  margin:auto;
+  height: 220px;
+  width:220px;
+  border-bottom: 6px solid rgb(211, 101, 67);
+  filter: grayscale(70%)
+}
+
+h3{
+  border-bottom: 6px solid rgb(211, 101, 67);
+  width:220px;
+  margin: 0.5rem auto;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+
+
 }
