@@ -75,6 +75,7 @@ h2 {
   
   .button-submit:hover {
     background: blue;
+    color: pink;
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
