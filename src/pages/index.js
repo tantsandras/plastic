@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import HaveSolutionButton from "../components/HaveSolution"
-import NeedSolutionButton from "../components/needsolution.js"
+import NeedSolutionButton from "../components/NeedSolution"
 
 const IndexPage = () => (
   <Layout>
