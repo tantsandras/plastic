@@ -10,8 +10,10 @@ import NeedSolutionButton from "../components/NeedSolution"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <div style={{display:`flex`, alignItems: `center`}}>
     <HaveSolutionButton />
     <NeedSolutionButton />
+    </div>
     {/* <Link to="/solution/">Go to page 2</Link> */}
   </Layout>
 )

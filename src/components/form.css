@@ -6,7 +6,7 @@ h2 {
     font-size: 2em;
     font-family: "Oswald", sans-serif;  
     text-transform: uppercase;
-    color: blue;
+    color: #4E5E82;
 }
 
 .form label {
@@ -16,7 +16,7 @@ h2 {
     font-weight: light;
     font-family: "Oswald", sans-serif;
     font-size: 1.6em;
-    color: blue;
+    color: #4E5E82;
   }
   
   .form input[type="text"],
@@ -26,7 +26,7 @@ h2 {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    border: 0.2em solid pink;
+    border: 0.2em solid #e6e8ed;
     padding: 1em;
     margin-top: 0.6em;
     margin-bottom: 0.6em;
@@ -43,10 +43,10 @@ h2 {
   .form input[type="email"]:focus,
   .form input[type="url"]:focus,
   .form textarea:focus {
-    -moz-box-shadow: 0 0 0.8em magenta;
-    -webkit-box-shadow: 0 0 0.8em magenta;
-    box-shadow: 0 0 0.8em magenta;
-    border: 0.2em solid magenta;
+    -moz-box-shadow: 0 0 0.4em #e6e8ed;
+    -webkit-box-shadow: 0 0 0.4em #e6e8ed;
+    box-shadow: 0 0 0.4em #e6e8ed;
+    border: 0.1em solid #e6e8ed;
   }
   
   .form {
@@ -62,7 +62,8 @@ h2 {
   }
   
   .button-submit {
-    background: pink;
+    background: #589c9a;
+    color: white;
     margin: 0.8em 0 0.6em 0;
     padding: 0.6em;
     text-align: center;
@@ -70,12 +71,12 @@ h2 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     font-size: 1.4em;
-    color: blue;
+    border-radius: 5px;
   }
   
   .button-submit:hover {
-    background: blue;
-    color: pink;
+    background: #589c9a;
+    color: white;
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
