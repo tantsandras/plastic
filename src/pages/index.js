@@ -2,20 +2,26 @@ import React from "react"
 import { Link } from "gatsby"
 import Header from "../components/Header"
 import "./index.css"
-
+import { HomeButtons, Slogan } from "../components/styled"
 
 const IndexPage = () => (
   <div>
-        <h2> HOME</h2>
-        <Header />
-  <div className="homeButtons">
-    <button>
-        <Link to="/register/">I have a Solution</Link>
-    </button>
-		<button>
-			<Link to="/solution/">I need a Solution</Link>
-		</button>
-    </div>
+    <h2> HOME</h2>
+    <Header />
+    <Slogan>We have the solution<br></br> to your plastic problem.</Slogan>
+    <HomeButtons>
+      <Link to="/register/">
+        <button>
+          I have a Solution
+        </button>
+      </Link>
+          <div></div>
+      <Link to="/solution/">
+        <button>
+          I need a Solution
+        </button>
+      </Link>
+      </HomeButtons>
   </div>
 )
 

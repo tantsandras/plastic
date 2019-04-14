@@ -7,13 +7,13 @@ const Header = ({ siteTitle }) => (
   <header>
     <div
       style={{
-        margin: `0 auto`,
+        marginLeft: `60%`,
+        marginTop: `-8.5%`,
         maxWidth: 960,
-        padding: `0.5rem 0.1rem`,
       }}
     >
       <Link to='/'>
-        <div style={{width: `25%`, margin: `1em`}}>
+        <div style={{width: `40%`, margin: `1em`}}>
         <Image />
         </div>
       </Link>
