@@ -23,18 +23,18 @@ const defaultImage = (
 
 
 class Card extends React.Component {
-
   state = {
     data: [{ title: 'cost', value: 600, fullBarValue: 1200 }, { title: 'co2', value: 300, fullBarValue: 2000 }, { title: 'other', value: 600, fullBarValue: 2000 }]
   }
 
   render() {
-    const { title = "", solutionType = "" } = this.props
+    const { title = "", solutionType = "", imageUrl = "" } = this.props
     return (
       <Link to='/organisation-page/' state={{ title, solutionType }}>
         <div className="card">
-          {defaultImage}
+          {imageUrl ? <img src={imageUrl} className="tile-img" alt="image here" /> : defaultImage}
           <div>
+            <h3>{title}</h3>
             <ProgressBars data={this.state.data} cardTile={title} />
           </div>
         </div>

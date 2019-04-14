@@ -63,7 +63,6 @@ export class ProgressBars extends React.Component {
     const {cardTile} = this.props
   return (
     <div>
-    <h3> {cardTile}</h3>
       <svg id={`svg-${cardTile}`}></svg>
 </div>
   )
