@@ -24,7 +24,7 @@ const fadeInRight = keyframes`
   const Slogan = styled.h4`
     margin: 2em;
     font-size: 4em;
-    font-family: 'Abril Fatface';
+    font-family: 'Abril Fatface', cursive;
     color: rgb(77, 87, 127);
     animation: ${fadeInRight} ease 0.8s forwards;
   `;
