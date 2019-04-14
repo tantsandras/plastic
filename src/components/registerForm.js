@@ -103,6 +103,9 @@ class RegisterForm extends React.Component {
                 placeholder="Paste your image url here" onChange={this.handleInputChange} value={this.state.imageUrl} />
             </div>
 
+            <label htmlFor="solutionType" style={{ margin: `10px`}}>Select a Stage:</label>
+
+            <div style={{margin: `5px`}}>
             <div>
 
               <input pattern="^[^<>]+$" name='videoUrl' type='url' id="video-url"
@@ -127,7 +130,7 @@ class RegisterForm extends React.Component {
                 <option value="dispose">Stage 3: End of Life</option>
               </select>
             </div>
-            <button type="submit" className="button-submit" style={{ marginTop: `1rem` }}>Add</button>
+            <button type="submit" className="button-submit" style={{ marginTop: `1rem`, border: `none`, padding:`10px 20px`, borderRadius: `5px` }}>Add</button>
           </ul>
         </form>
       </section >
