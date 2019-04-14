@@ -2,20 +2,44 @@ import React from "react"
 import { Link } from "gatsby"
 import Header from "../components/Header"
 import "./index.css"
-
+import { HomeButtons } from "../components/styled"
 
 const IndexPage = () => (
   <div>
-        <h2> HOME</h2>
-        <Header />
-  <div className="homeButtons">
-    <button>
-        <Link to="/register/">I have a Solution</Link>
-    </button>
-		<button>
-			<Link to="/solution/">I need a Solution</Link>
-		</button>
-    </div>
+    <h2> HOME</h2>
+    <Header />
+    <HomeButtons>
+      <Link to="/register/">
+        <button
+          style={{
+            fontSize: `1rem`,
+            fontWeight: `bold`,
+            textTransform: `uppercase`,
+            color: `rgb(255, 247, 242)`,
+            backgroundColor: `rgb(77, 87, 127)`,
+            borderRadius: `10px`,
+            padding: `0.5rem`
+          }}
+        >
+          I have a Solution
+        </button>
+      </Link>
+      <Link to="/solution/">
+        <button
+          style={{
+            fontSize: `1rem`,
+            fontWeight: `bold`,
+            textTransform: `uppercase`,
+            color: `rgb(255, 247, 242)`,
+            backgroundColor: `rgb(77, 87, 127)`,
+            borderRadius: `10px`,
+            padding: `0.5rem`
+          }}
+        >
+          I need a Solution
+        </button>
+      </Link>
+      </HomeButtons>
   </div>
 )
 
