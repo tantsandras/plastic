@@ -1,7 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
-import { ProgressBars } from './ProgressBars'
 import { Link } from "gatsby"
 
 const defaultImage = (
@@ -28,14 +27,14 @@ class Card extends React.Component {
   }
 
   render() {
-    const { title = "", solutionType = "", imageUrl = "" } = this.props
+    const { title = "", solutionType = "", imageUrl = "", description = "" } = this.props
     return (
       <Link to='/organisation-page/' state={{ title, solutionType }}>
         <div className="card">
           {imageUrl ? <img src={imageUrl} className="tile-img" alt="image here" /> : defaultImage}
           <div>
             <h3>{title}</h3>
-            <ProgressBars data={this.state.data} cardTile={title} />
+            <p>{description}</p>
           </div>
         </div>
       </Link>
