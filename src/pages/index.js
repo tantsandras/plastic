@@ -6,22 +6,23 @@ import { HomeButtons, Slogan } from "../components/styled"
 
 const IndexPage = () => (
   <div>
-    <h2> HOME</h2>
     <Header />
-    <Slogan>We have the solution<br></br> to your plastic problem.</Slogan>
-    <HomeButtons>
-      <Link to="/register/">
-        <button>
-          I have a Solution
+    <div >
+      <Slogan>We have the solution<br></br> to your plastic problem.</Slogan>
+      <HomeButtons>
+        <Link to="/register/">
+          <button>
+            I have a Solution
         </button>
-      </Link>
-          <div></div>
-      <Link to="/solution/">
-        <button>
-          I need a Solution
+        </Link>
+        <div></div>
+        <Link to="/solution/">
+          <button>
+            I need a Solution
         </button>
-      </Link>
+        </Link>
       </HomeButtons>
+    </div>
   </div>
 )
 

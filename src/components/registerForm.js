@@ -53,87 +53,89 @@ class RegisterForm extends React.Component {
     return (
       <section id="register" title="register">
         <form onSubmit={this.handleSubmit} >
-          <h2>REGISTER A SOLUTION</h2>
+          <h2>Register a Solution</h2>
           <ul className="form" id="register">
-            <div>
+            <div style={{ marginTop: `1em` }}>
 
-              <input pattern="^[^<>]+$" name='name' type='text' id="name"
+              <input pattern="^[^<>]+$" name='name' type='text' id="name" style={{ border: `2px solid  rgb(77, 87, 127)`, padding: `0.5em`, backgroundColor: `rgb(255, 247, 242)` }}
                 className="field-long" placeholder="Type your name here" required onChange={this.handleInputChange} value={this.state.name} />
             </div>
-            <div>
+            <div style={{ marginTop: `1em` }}>
 
-              <input type="email" pattern="^[^<>]+$" name='email' id="email" className="field-long"
+              <input style={{ border: `2px solid  rgb(77, 87, 127)`, padding: `0.5em`, backgroundColor: `rgb(255, 247, 242)` }} type="email" pattern="^[^<>]+$" name='email' id="email" className="field-long"
                 placeholder="Enter your email here" required onChange={this.handleInputChange} value={this.state.email} />
             </div>
-            <div>
+            <div style={{ marginTop: `1em` }}>
 
-              <input type="institute" name='institute' id="institute" className="field-long"
+              <input style={{ border: `2px solid  rgb(77, 87, 127)`, padding: `0.5em`, backgroundColor: `rgb(255, 247, 242)` }} type="institute" name='institute' id="institute" className="field-long"
                 placeholder="Enter your institute here" onChange={this.handleInputChange} value={this.state.institute} />
             </div>
-            <div>
+            <div style={{ marginTop: `1em` }}>
 
-              <input type="bestUse" name='bestUse' id="bestUse" className="field-long"
+              <input style={{ border: `2px solid  rgb(77, 87, 127)`, padding: `0.5em`, backgroundColor: `rgb(255, 247, 242)` }} type="bestUse" name='bestUse' id="bestUse" className="field-long"
                 placeholder="Best Use" onChange={this.handleInputChange} value={this.state.bestUse} />
             </div>
-            <div>
-              <input type="typeOfPlastic" name='typeOfPlastic' id="typeOfPlastic" className="field-long"
+            <div style={{ marginTop: `1em` }}>
+              <input style={{ border: `2px solid  rgb(77, 87, 127)`, padding: `0.5em`, backgroundColor: `rgb(255, 247, 242)` }} type="typeOfPlastic" name='typeOfPlastic' id="typeOfPlastic" className="field-long"
                 placeholder="Type of Plastic" onChange={this.handleInputChange} value={this.state.typeOfPlastic} />
             </div>
-            <div>
-              <input type="timeRequired" name='timeRequired' id="timeRequired" className="field-long"
+            <div style={{ marginTop: `1em` }}>
+              <input style={{ border: `2px solid  rgb(77, 87, 127)`, padding: `0.5em`, backgroundColor: `rgb(255, 247, 242)` }} type="timeRequired" name='timeRequired' id="timeRequired" className="field-long"
                 placeholder="Time Required" onChange={this.handleInputChange} value={this.state.timeRequired} />
             </div>
-            <div>
+            <div style={{ marginTop: `1em` }}>
 
-              <textarea pattern="^[^<>]+$" name='description' type='text'
+              <textarea style={{ border: `2px solid  rgb(77, 87, 127)`, padding: `0.5em`, backgroundColor: `rgb(255, 247, 242)`, height: 100 }} pattern="^[^<>]+$" name='description' type='text'
                 id="description" placeholder="Provide a short description of your solution"
-                required onChange={this.handleInputChange} className="field-long" value={this.state.description} style={{ height: 100 }} />
+                onChange={this.handleInputChange} className="field-long" value={this.state.description} />
             </div>
 
-            <div>
+            <div style={{ marginTop: `1em` }}>
 
-              <textarea pattern="^[^<>]+$" name='longDescription' type='text'
+              <textarea style={{ border: `2px solid  rgb(77, 87, 127)`, padding: `0.5em`, backgroundColor: `rgb(255, 247, 242)`, height: 200 }} pattern="^[^<>]+$" name='longDescription' type='text'
                 id="longDescription" className="field-long" placeholder="Provide a longer description of your solution"
-                required onChange={this.handleInputChange} value={this.state.longDescription} style={{ height: 200 }} />
+                onChange={this.handleInputChange} value={this.state.longDescription} />
             </div>
 
-            <div>
+            <div style={{ marginTop: `1em` }}>
 
-              <input pattern="^[^<>]+$" name='imageUrl' type='url' id="image-url"
+              <input style={{ border: `2px solid  rgb(77, 87, 127)`, padding: `0.5em`, backgroundColor: `rgb(255, 247, 242)` }} pattern="^[^<>]+$" name='imageUrl' type='url' id="image-url"
                 placeholder="Paste your image url here" onChange={this.handleInputChange} value={this.state.imageUrl} />
             </div>
 
-            <label htmlFor="solutionType" style={{ margin: `10px`}}>Select a Stage:</label>
+            <div style={{ margin: `5px` }}>
+              <div style={{ marginTop: `1em` }}>
 
-            <div style={{margin: `5px`}}>
-            <div>
-
-              <input pattern="^[^<>]+$" name='videoUrl' type='url' id="video-url"
-                placeholder="Paste any video urls here" onChange={this.handleInputChange} value={this.state.videoUrl} />
-            </div>
+                <input style={{ border: `2px solid  rgb(77, 87, 127)`, padding: `0.5em`, backgroundColor: `rgb(255, 247, 242)` }} pattern="^[^<>]+$" name='videoUrl' type='url' id="video-url"
+                  placeholder="Paste any video urls here" onChange={this.handleInputChange} value={this.state.videoUrl} />
+              </div>
 
 
-            <div>
-              <label htmlFor="patented">Is the solution patented:</label>
-              <select name="patented" onChange={this.handleInputChange} >
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-                <option value="pending">Pending</option>
-              </select>
-            </div>
+              <div style={{ marginTop: `1em` }}>
+                <label style={{ marginTop: `1em` }} htmlFor="patented">Is the solution patented:</label>
+                <div>
+                  <select name="patented" onChange={this.handleInputChange} >
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="pending">Pending</option>
+                  </select>
+                </div>
+              </div>
 
-            <div>
-              <label htmlFor="solutionType">Select a Stage:</label>
-              <select name="solutionType" onChange={this.handleInputChange} >
-                <option value="replace">Stage 1: Start of Life</option>
-                <option value="recycle">Stage 2: Mid-Life/Recycling</option>
-                <option value="dispose">Stage 3: End of Life</option>
-              </select>
-            </div>
-            <button type="submit" className="button-submit" style={{ marginTop: `1rem`, border: `none`, padding:`10px 20px`, borderRadius: `5px` }}>Add</button>
+              <div style={{ marginTop: `1em` }}>
+                <label style={{ marginTop: `1em` }} htmlFor="solutionType">Select a Stage:</label>
+                <div>
+                  <select name="solutionType" onChange={this.handleInputChange} >
+                    <option value="replace">Stage 1: Start of Life</option>
+                    <option value="recycle">Stage 2: Mid-Life/Recycling</option>
+                    <option value="dispose">Stage 3: End of Life</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" className="button-submit" style={{ marginTop: `1rem`, border: `none`, padding: `10px 20px`, borderRadius: `5px` }}>Add</button>
             </div>
           </ul>
-      
+
         </form>
       </section>
     )

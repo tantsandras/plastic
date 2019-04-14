@@ -11,8 +11,8 @@ const fadeInRight = keyframes`
       transform: translateX(0);
     }
   `;
-  
-  const growLeft = keyframes`
+
+const growLeft = keyframes`
     from {
       transform: scaleX(0);
     }
@@ -21,15 +21,15 @@ const fadeInRight = keyframes`
     }
   `;
 
-  const Slogan = styled.h4`
-    margin: 2em;
+const Slogan = styled.h4`
+    margin: 1em;
     font-size: 4em;
     font-family: 'Abril Fatface', cursive;
     color: rgb(77, 87, 127);
     animation: ${fadeInRight} ease 0.8s forwards;
   `;
 
-  const HomeButtons = styled.div`
+const HomeButtons = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 10em;
@@ -87,6 +87,6 @@ const fadeInRight = keyframes`
 `;
 
 export {
-HomeButtons,
-Slogan,
+  HomeButtons,
+  Slogan,
 }

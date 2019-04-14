@@ -9,6 +9,7 @@ const generateTitle = (key) => {
     typeOfPlastic: "Type of Plastic",
     timeRequired: "Time required",
     institute: "Institute",
+    patented: "Patented?"
   }
   return titles[key]
 }
@@ -40,21 +41,21 @@ const organisationPage = ({ location }) => {
 
       {!!imageUrl && <img src={imageUrl} alt="image here" />}
 
-      <ProgressBars data={[{title: 'cost', value: 600, fullBarValue: 1200}, {title: 'co2', value: 300, fullBarValue: 2000} , {title: 'other', value: 600, fullBarValue: 2000}]} />
+      <ProgressBars data={[{ title: 'cost', value: 600, fullBarValue: 1200 }, { title: 'co2', value: 300, fullBarValue: 2000 }, { title: 'other', value: 600, fullBarValue: 2000 }]} />
 
-        <h4>Description</h4>
-        {!!description && <p>{description}</p>}
-        {!!longDescription && <p>{longDescription}</p>}
+      <h4>Description</h4>
+      {!!description && <p>{description}</p>}
+      {!!longDescription && <p>{longDescription}</p>}
 
-        <h4>Useful Information</h4>
-        {otherFieldsToMap}
+      <h4>Useful Information</h4>
+      {otherFieldsToMap}
 
-        <h4>Media</h4>
-        {!!videoUrl && <Video sourceUrl={solutionData.videoUrl} />}
+      <h4>Media</h4>
+      {!!videoUrl && <Video sourceUrl={solutionData.videoUrl} />}
 
-        <div>
-          <button><a href={`mailto:${email}`}>Contact The Solution masters!</a>  </button>
-        </div>
+      <div>
+        <button><a href={`mailto:${email}`}>Contact The Solution masters!</a>  </button>
+      </div>
     </Layout >
 
   )
