@@ -70,16 +70,16 @@ class RegisterForm extends React.Component {
                 className="field-long" placeholder="Paste your image url here" onChange={this.handleInputChange} style={{ height: 200 }} value={this.state.imageUrl} />
             </div>
 
-            <label htmlFor="solutionType">Select a Stage:</label>
+            <label htmlFor="solutionType" style={{ margin: `10px`}}>Select a Stage:</label>
 
-            <div>
+            <div style={{margin: `5px`}}>
               <select name="solutionType" onChange={this.handleInputChange} >
                 <option value="replace">Stage 1: Start of Life</option>
                 <option value="recycle">Stage 2: Mid-Life/Recycling</option>
                 <option value="dispose">Stage 3: End of Life</option>
               </select>
             </div>
-            <button type="submit" className="button-submit" style={{ marginTop: `1rem` }}>Add</button>
+            <button type="submit" className="button-submit" style={{ marginTop: `1rem`, border: `none`, padding:`10px 20px`, borderRadius: `5px` }}>Add</button>
           </ul>
         </form>
       </section >
