@@ -13,7 +13,7 @@ const Solutions = ({ type = 'replace' }) => {
 
   return (
     <div style={{ display: `flex`, justifyContent: `space-between`, flexWrap: `wrap` }}>
-      {solutions.map(solution => <Card key={solution.name} title={solution.name} />)}
+      {solutions.map(solution => <Card key={solution.name} title={solution.name} {...solution} />)}
     </div>
   )
 }
