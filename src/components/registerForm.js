@@ -131,7 +131,7 @@ class RegisterForm extends React.Component {
               </select>
             </div>
             <button type="submit" className="button-submit" style={{ marginTop: `1rem`, border: `none`, padding:`10px 20px`, borderRadius: `5px` }}>Add</button>
-          </ul>
+          </url>
         </form>
       </section >
     )
