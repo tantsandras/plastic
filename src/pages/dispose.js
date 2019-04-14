@@ -2,14 +2,21 @@ import React from "react"
 import { Link } from "gatsby"
 import Card from "../components/card"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+
+
+
 
 const DisposePage = () => (
-    <Layout>
-      <SEO title="Dispose" keywords={[`gatsby`, `application`, `react`]} />
-        <Card />
-    </Layout>
+    <div>
+        <h2> DISPOSE</h2>
+        <div className="card-container">
+        <Card title="one" />
+        <Card title="two" />
+        <Card title="three" />
+        <Card title="four" />
+        <Card title="five" />
+        </div>
+    </div>
   )
 
 export default DisposePage

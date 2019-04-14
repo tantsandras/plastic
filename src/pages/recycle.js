@@ -2,14 +2,23 @@ import React from "react"
 import { Link } from "gatsby"
 import Card from "../components/card"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+
+
 
 const RecyclePage = () => (
-    <Layout>
-      <SEO title="Recycle" keywords={[`gatsby`, `application`, `react`]} />
-        <Card />
-    </Layout>
+    <div>
+
+        <h2> RECYCLE</h2>
+        <div className="card-container">
+        <Card title="one" />
+        <Card title="two" />
+        <Card title="three" />
+        <Card title="four" />
+        <Card title="five" />
+
+
+        </div>
+    </div>
   )
 
 export default RecyclePage

@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
-
+import { ProgressBars} from './ProgressBars'
 const defaultImage = (
   <StaticQuery
     query={graphql`
@@ -15,18 +15,32 @@ const defaultImage = (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img className="tile-img" fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 
-const Card = ({ title }) => {
+
+class Card extends React.Component {
+
+  state = {
+    data: [{title: 'cost', value: 600, fullBarValue: 1200}, {title: 'co2', value: 300, fullBarValue: 2000} , {title: 'other', value: 600, fullBarValue: 2000}]
+  }
+
+  render(){
+    const {title} = this.props
   return (
-    <div style={{ minWidth: `15rem`, marginBottom: `1.5rem`, backgroundColor: `white`, borderRadius: `5px`, boxShadow: `0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)` }}>
-      <h2>{title}</h2> 
+    <div className="card">
       {defaultImage}
-      <p>test</p>
+      <div >
+
+          <ProgressBars data={this.state.data} cardTile={title}/>
+
+        </div>
+
     </div>
   )
 }
+}
+
 
 export default Card
