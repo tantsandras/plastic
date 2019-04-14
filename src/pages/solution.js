@@ -16,7 +16,7 @@ const Solution = ({ location }) => {
 
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title="Solutions" />
       <p>Alternative Plastics</p>
       <button style={buttonStyle}><Link to="/replace/">I want to stop using plastic!</Link></button>
       <button style={buttonStyle}><Link to="/recycle/">I want to figure out how to recycle plastic!</Link></button>

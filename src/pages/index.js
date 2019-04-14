@@ -11,7 +11,6 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <HaveSolutionButton />
     <NeedSolutionButton />
-    {/* <Link to="/solution/">Go to page 2</Link> */}
   </Layout>
 )
 

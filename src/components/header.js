@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import plastisceneLogo from "../images/plastiscene-logo.png"
+import Image from "./image"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -29,7 +29,9 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1> */}
       <Link to='/'>
-        <img src={plastisceneLogo} width='15%' />
+        <div style={{width: `25%`, margin: `1em`}}>
+        <Image />
+        </div>
       </Link>
     </div>
   </header>
