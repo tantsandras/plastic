@@ -2,40 +2,22 @@ import React from "react"
 import { Link } from "gatsby"
 import Header from "../components/Header"
 import "./index.css"
-import { HomeButtons } from "../components/styled"
+import { HomeButtons, Slogan } from "../components/styled"
 
 const IndexPage = () => (
   <div>
     <h2> HOME</h2>
     <Header />
+    <Slogan>We have the solution<br></br> to your plastic problem.</Slogan>
     <HomeButtons>
       <Link to="/register/">
-        <button
-          style={{
-            fontSize: `1rem`,
-            fontWeight: `bold`,
-            textTransform: `uppercase`,
-            color: `rgb(255, 247, 242)`,
-            backgroundColor: `rgb(77, 87, 127)`,
-            borderRadius: `10px`,
-            padding: `0.5rem`
-          }}
-        >
+        <button>
           I have a Solution
         </button>
       </Link>
+          <div></div>
       <Link to="/solution/">
-        <button
-          style={{
-            fontSize: `1rem`,
-            fontWeight: `bold`,
-            textTransform: `uppercase`,
-            color: `rgb(255, 247, 242)`,
-            backgroundColor: `rgb(77, 87, 127)`,
-            borderRadius: `10px`,
-            padding: `0.5rem`
-          }}
-        >
+        <button>
           I need a Solution
         </button>
       </Link>
