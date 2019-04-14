@@ -8,6 +8,13 @@ class RegisterForm extends React.Component {
     email: "",
     description: "",
     imageUrl: "",
+    videoUrl: "",
+    longDescription: "",
+    bestUse: "",
+    typeOfPlastic: "",
+    timeRequired: "",
+    patented: '',
+    institute: "",
     solutionType: 'replace'
   }
 
@@ -60,19 +67,60 @@ class RegisterForm extends React.Component {
             </div>
             <div>
 
-              <textarea pattern="^[^<>]+$" name='description' type='text'
-                id="description" className="field-long" placeholder="Provide a short description of your solution"
-                required onChange={this.handleInputChange} value={this.state.description} style={{ height: 200 }} />
+              <input type="institute" name='institute' id="institute" className="field-long"
+                placeholder="Enter your institute here" onChange={this.handleInputChange} value={this.state.institute} />
             </div>
+            <div>
+
+              <input type="bestUse" name='bestUse' id="bestUse" className="field-long"
+                placeholder="Best Use" onChange={this.handleInputChange} value={this.state.bestUse} />
+            </div>
+            <div>
+              <input type="typeOfPlastic" name='typeOfPlastic' id="typeOfPlastic" className="field-long"
+                placeholder="Type of Plastic" onChange={this.handleInputChange} value={this.state.typeOfPlastic} />
+            </div>
+            <div>
+              <input type="timeRequired" name='timeRequired' id="timeRequired" className="field-long"
+                placeholder="Time Required" onChange={this.handleInputChange} value={this.state.timeRequired} />
+            </div>
+            <div>
+
+              <textarea pattern="^[^<>]+$" name='description' type='text'
+                id="description" placeholder="Provide a short description of your solution"
+                required onChange={this.handleInputChange} className="field-long" value={this.state.description} style={{ height: 100 }} />
+            </div>
+
+            <div>
+
+              <textarea pattern="^[^<>]+$" name='longDescription' type='text'
+                id="longDescription" className="field-long" placeholder="Provide a longer description of your solution"
+                required onChange={this.handleInputChange} value={this.state.longDescription} style={{ height: 200 }} />
+            </div>
+
             <div>
 
               <input pattern="^[^<>]+$" name='imageUrl' type='url' id="image-url"
-                className="field-long" placeholder="Paste your image url here" onChange={this.handleInputChange} style={{ height: 200 }} value={this.state.imageUrl} />
+                placeholder="Paste your image url here" onChange={this.handleInputChange} value={this.state.imageUrl} />
             </div>
 
-            <label htmlFor="solutionType">Select a Stage:</label>
+            <div>
+
+              <input pattern="^[^<>]+$" name='videoUrl' type='url' id="video-url"
+                placeholder="Paste any video urls here" onChange={this.handleInputChange} value={this.state.videoUrl} />
+            </div>
+
 
             <div>
+              <label htmlFor="patented">Is the solution patented:</label>
+              <select name="patented" onChange={this.handleInputChange} >
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="pending">Pending</option>
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor="solutionType">Select a Stage:</label>
               <select name="solutionType" onChange={this.handleInputChange} >
                 <option value="replace">Stage 1: Start of Life</option>
                 <option value="recycle">Stage 2: Mid-Life/Recycling</option>
