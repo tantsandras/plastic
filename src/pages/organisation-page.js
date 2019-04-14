@@ -6,6 +6,9 @@ import SEO from "../components/seo"
 import Video from "../components/video"
 import OrganisationDescription from "../components/organisation-description";
 
+
+const dummyData = [{name: 'Kyoto Institute of Technology, Japan', imageUrl: }]
+
 const organisationPage = () => (
     <Layout>
         <div>
