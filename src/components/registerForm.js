@@ -1,5 +1,4 @@
 import React from "react"
-import formStyle from "./form.css"
 import { Link } from "gatsby"
 
 class RegisterForm extends React.Component {
@@ -22,23 +21,35 @@ class RegisterForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    console.log(this.state)
+
   }
   render() {
     return (
       <section id="register" title="register">
-        <form onSubmit={this.handleSubmit} style={formStyle}>
-          <h2>Register</h2>
+        <form onSubmit={this.handleSubmit} >
+          <h2>REGISTER A SOLUTION</h2>
           <ul className="form" id="register">
-            <label htmlFor="name">Name</label><input pattern="^[^<>]+$" name='name' type='text' id="name"
+          <div>
+
+              <input pattern="^[^<>]+$" name='name' type='text' id="name"
               className="field-long" placeholder="Type your name here" required onChange={this.handleInputChange} value={this.state.name} />
-            <label htmlFor="email">Email</label><input type="email" pattern="^[^<>]+$" name='email' id="email" className="field-long"
+        </div>
+        <div>
+
+              <input type="email" pattern="^[^<>]+$" name='email' id="email" className="field-long"
               placeholder="Enter your email here" required onChange={this.handleInputChange} value={this.state.email} />
-            <label htmlFor="description">Description</label><input pattern="^[^<>]+$" name='description' type='text'
+      </div>
+      <div>
+
+              <textarea pattern="^[^<>]+$" name='description' type='text'
               id="description" className="field-long" placeholder="Provide a short description of your solution"
-              required onChange={this.handleInputChange} value={this.state.description} />
-            <label htmlFor="image-url">Image</label><input pattern="^[^<>]+$" name='imageUrl' type='url' id="image-url"
-              className="field-long" placeholder="Paste your image url here" onChange={this.handleInputChange} value={this.state.imageUrl} />
+              required onChange={this.handleInputChange} value={this.state.description} style={{height: 200}}/>
+      </div>
+      <div>
+
+              <input pattern="^[^<>]+$" name='imageUrl' type='url' id="image-url"
+              className="field-long" placeholder="Paste your image url here" onChange={this.handleInputChange} style={{height: 200}} value={this.state.imageUrl} />
+      </div>
             <button type="submit" className="button-submit"><Link to="/solution/" state={{ formData: this.state }}>Register</Link></button>
           </ul>
         </form>
